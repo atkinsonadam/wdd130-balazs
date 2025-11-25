@@ -5,17 +5,35 @@
     <title>Jesse Balazs</title>
 
     <style>
-        header {
+        body {
+            margin: 0;
+        }
+
+
+        #miniheadercont {
             display: flex;
             position: relative;
             width: 100%;
             align-items: center;
         }
         
-        header img {
+        #logo {
             width: 100px;
             height: 100px;
             text-align: left;
+        }
+
+        #logo:hover {
+            opacity: 0;
+        }
+
+        #logo_container:hover {
+            border-radius: 100%;
+            background-image: url(images/Jpeg.jpg);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            color: white;
         }
 
         header h1 {
@@ -24,17 +42,265 @@
             left: 50%;
             transform: translate(-50%);
         }
+
+        #mainimgsec {
+            width: 100%;
+            height: 300px;
+            display: block;
+        }
+
+
+        #mainimgsec img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        nav {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            width: 66%;
+            margin: 20px auto;
+            text-align: center;
+            column-gap: 2px;
+        }
+
+        .navlinkcon {
+            width: 100%;
+            border: solid black 2px;
+            border-radius: 10px 10px 2px 2px;
+            height: 100%;
+            align-items: center;
+            display: flex;
+        }
+
+        #navlinkcon3 a:hover {
+            color: white;
+        }
+
+        #navlinkcon3:hover {
+            background-image: url(images/Glaceir\ step.jpg);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            color: white;
+        }
+
+        .navlinkcon img {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            object-fit: cover;
+            z-index: -1;
+        }
+
+        .navlink {
+            display: flex;
+            margin: 5px;
+            width: 100%;
+            height: 11vw;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .navlinka {
+            text-decoration: none;
+            color: black;
+            width: 100%;
+            height: 100%;
+            font-size: 2em;
+            font-weight: 400;
+            display: flex;              
+            justify-content: center;     
+            align-items: center;
+        }
+
+        #text-main-section {
+            display: grid;
+            grid-template-columns: 1fr 1.5fr 1.5fr 1fr;
+            grid-template-rows: 50px auto;
+            gap: 20px;
+            row-gap: 5px;
+        }
+
+        #text-main-section h2 {
+            justify-self: stretch;
+            grid-row: 1/2;
+            grid-column: 1/5;
+            text-align: center;
+            align-self: bottom;
+        }
+
+        #p1 {
+            justify-self: stretch;
+            grid-row: 2/3;
+            grid-column: 2/3;
+        }
+
+        #p2 {
+            justify-self: stretch;
+            grid-row: 2/3;
+            grid-column: 3/4;
+        }
+
+        #p3 {
+            justify-self: stretch;
+            grid-row: 3/4;
+            grid-column: 2/3;
+        }
+
+        #p4 {
+            justify-self: stretch;
+            grid-row: 3/4;
+            grid-column: 3/4;
+        }
+
+        #p5 {
+            justify-self: stretch;
+            grid-row: 4/5;
+            grid-column: 2/3;
+        }
+
+        #p6 {
+            justify-self: stretch;
+            grid-row: 4/5;
+            grid-column: 3/4;
+        }
+
+        #p7 {
+            justify-self: stretch;
+            grid-row: 5/6;
+            grid-column: 2/4;
+        }
+
+        #ember_section {
+            width: 100%;
+            height: 100%;
+            grid-row: 1/2;
+            grid-column: 1/2;
+        }
+
+        #ember_section img {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            opacity: 0;
+        }
+
+        #ember_section img:hover {
+            opacity: 1;
+        }
+
+        #trap {
+            width: 95%;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+            gap: 15px;
+        }
+
+        .trap1 {
+            justify-self: stretch;
+            width: 100%;
+            height: 50px;
+            border-radius: 25px;
+            background-color: black;
+            margin: 15px;
+        }
+
+        #hint {
+            text-align: center;
+            align-content: center;
+        }
+
+        #hint:hover {
+            background-color: transparent;
+        }
+
+        #hint p {
+            font-size: .25em;
+        }
+
+        #p6:hover {
+            background-image: url(images/MossClaw.jpg);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
     </style>
 </head>
 <body>
     <header>
-    <img src="images/Cat Logo Jpeg Image.jpg" alt="Cool Cats logo">
-    <h1>Cool Cats</h1>
+    <div id="miniheadercont">
+        <div id="logo_container">
+            <img id="logo" src="images/Cat Logo Jpeg Image.jpg" alt="Cool Cats logo">
+        </div>
+        <h1>Cool Cats</h1>
+    </div>
+
+    <div id = "mainimgsec">
+        <img src="images/Cool Cats main image. (1920 x 300 px).jpg" alt="cats in a field">
+    </div>
+
+    <nav>
+        <div id="navlinkcon1" class="navlinkcon">
+            <div class="navlink">
+                <a class="navlinka" href="index.html">Home</a>
+            </div>
+        </div>
+        <div id="navlinkcon2" class="navlinkcon">
+            <div class="navlink">
+                <a class="navlinka" href="">About</a>
+            </div>
+        </div>
+        <div id="navlinkcon3" class="navlinkcon">
+            <div class="navlink">
+                <a class="navlinka" href="index.html">Contact</a>
+            </div>
+        </div>
+    </nav>
     </header>
 
-    <div>
-        <img src="" alt="">
-    </div>
+    <main>
+        <div id="text-main-section">
+            <h2>Find all 6 Cool Cats!</h1>
+            <p id="p1">
+                Cool cats have a habit of showing up in the most unexpected places, as if the world is their personal playground. Take Frostbite, for example — a snow-white cat who patrols the frozen rooftops of northern towns like a fluffy guardian of winter. Locals swear they’ve seen him lounging on icy chimneys as if they were heated thrones, completely unfazed by the cold. When he walks, his paws barely leave prints, and whenever someone tries to follow him, he disappears behind a curtain of frost like he’s part ghost, part explorer.
+            </p>
+            <p id="p2">
+                Down south, there’s Ember, the desert wanderer. She’s a fiery orange tabby known for sleeping inside ancient clay pots warmed by the sun. Travelers crossing the dunes often spot her perched on a sandstone arch, blinking slowly as if she has all the time in the world. Rumor has it she can navigate by starlight alone, guiding lost wanderers back to the caravan road with nothing more than her glowing eyes and a flick of her tail.
+            </p>
+            <p id="p3">
+                In the neon-lit cityscape, WhiskerVolt reigns supreme. This sleek black cat roams rooftop gardens, neon signs, and fire escapes like a parkour master. People swear they’ve seen him balancing on the thinnest metal railings above rush-hour traffic without a shred of hesitation. At night, you can catch him lounging under the electric glow of billboards, his eyes reflecting the lights like tiny twin moons. Delivery drivers claim he knows every alley, shortcut, and quiet corner in the city — and that he sometimes hops into delivery robots just for the fun of the ride.
+            </p>
+            <p id="p4">
+                Meanwhile, in the jungle canopy, there’s Mossclaw — a green-eyed forest cat with fur that almost blends with the leaves. She stretches out on ancient branches like they were custom-made hammocks, lazily swatting at vines whenever a monkey swings too close. Researchers who’ve set up cameras in the area keep finding photos of her staring directly into the lens, as if she’s posing intentionally. Some people think she knows every secret path through the jungle, including ones no human has ever walked.
+            </p>
+            <p id="p5">
+                On a windy cliff by the sea, Seastride is the resident cool cat. With grey fur like storm clouds and a tail that curls just slightly at the tip, he spends his days watching ships drift across the horizon. Fishermen say he always appears before a storm — not because he’s seeking shelter, but because he likes the way the wind ruffles his fur. At night, he curls up inside an old lighthouse, basking in the glow of the rotating lamp as if it’s his own personal nightlight.
+            </p>
+            <p id="p6">
+                High in the mountains, where the air gets thin and the world feels huge, you can find Glacierstep. She’s a long-furred cat who moves almost silently over rocky cliffs, somehow knowing exactly where the warm sunbeams hit even in the coldest mornings. Climbers love her because she sometimes appears at camp as if she’s checking on them, giving a slow blink of approval before trotting off into the mist.
+            </p>
+            <p id="p7">
+                Each of these cats lives in a place as wild, strange, or beautiful as they are, but they all share one thing: an unshakable coolness, the kind that makes you stop and stare. Whether they’re perched above a glowing city, prowling through ancient ruins, or napping on a frozen roof, cool cats just seem to make every place even cooler.
+            </p>
+            <div id="ember_section">
+                <img src="images/Ember Good resolution.jpg" alt="ember cat">
+            </div>
+        </div>
+        <div id="trap">
+                <div class="trap1"></div>
+                <div class="trap1"></div>
+                <div id="hint" class="trap1">
+                    <p>Hint look on the Sides</p>
+                </div>
+                <div class="trap1"></div>
+                <div class="trap1"></div>
+                <div class="trap1"></div>
+                <div class="trap1"></div>
+            </div>
+    </main>
 
 
 
