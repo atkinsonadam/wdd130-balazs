@@ -186,7 +186,7 @@ body {
         }
 
         #trap {
-            width: 95%;
+            width: 85%;
             display: grid;
             grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
             gap: 15px;
@@ -219,4 +219,42 @@ body {
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
+        }
+        /* Frostbite Easter Egg */
+        @keyframes shimmer {
+            0%, 70%, 100% {
+                color: inherit;
+                text-shadow: none;
+            }
+            85% {
+                color: #a8d4ff;
+                text-shadow: 0 0 8px rgba(168, 212, 255, 0.8);
+            }
+        }
+
+        .winter-keyword {
+            cursor: pointer;
+            animation: shimmer 10s infinite;
+        }
+
+        #frostbite-reveal {
+            position: relative;
+            margin: 2rem auto;
+            display: block;
+            text-align: center;
+            width: 250px;
+            opacity: 0;
+            transition: opacity 0.6s ease;
+            z-index: 100;
+        }
+
+        #frostbite-reveal img {
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: -5px 5px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        .winter-keyword:hover ~ #frostbite-reveal,
+        #text-main-section:has(.winter-keyword:hover) ~ #frostbite-reveal {
+            opacity: 1;
         }
