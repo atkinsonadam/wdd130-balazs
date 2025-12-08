@@ -186,9 +186,10 @@ body {
         }
 
         #trap {
-            width: 85%;
+            width: 100%;
             display: grid;
-            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+            grid-template-columns: .05fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr .05fr;
+            grid-template-rows: 1fr .05fr;
             gap: 15px;
         }
 
@@ -198,7 +199,6 @@ body {
             height: 50px;
             border-radius: 25px;
             background-color: black;
-            margin: 15px;
         }
 
         #hint {
