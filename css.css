@@ -124,6 +124,76 @@ body {
             align-self: bottom;
         }
 
+        #form {
+            display: grid;
+            grid-template-columns: 2fr 1.5fr 1.5fr 2fr;
+            gap: 20px;
+            row-gap: 5px;
+            justify-content: center;
+            text-align: left;
+        }
+
+        #submit_button {
+            background-color: white;
+            margin-top: 25px;
+            margin-bottom: 10px;
+            width: 100px;
+            height: 50px;
+            border-radius: 25px;
+        }
+
+        #form_cb {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-self: stretch;
+            grid-row: 1/2;
+            grid-column: 3/4;
+            flex-wrap: wrap;
+            align-content: center;
+        }
+
+        #form_txt {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-self: stretch;
+            grid-row: 1/2;
+            grid-column: 2/3;
+            align-items: center;
+        }
+
+        #pcontact {
+            justify-self: stretch;
+            grid-column: 2/4;
+            text-align: center;
+        }
+
+        #form_mes {
+            justify-self: stretch;
+            grid-column: 2/4;
+            grid-row: 2/3;
+            text-align: center;
+        }
+
+        #form_mes textarea {
+            width: 100%;
+            max-width: 600px;
+            height: 100px;
+            vertical-align: top;
+            align-items: top;
+            border-width: 2px;
+            border-radius: 5px;
+            border-color: black;
+        }
+
+        #trap1cat:hover {
+            background-image: url(images/Seastride.jpg);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
         #p1 {
             justify-self: stretch;
             grid-row: 2/3;
